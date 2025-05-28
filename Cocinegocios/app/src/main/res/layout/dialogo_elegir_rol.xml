@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="30dp"
+    android:orientation="vertical"
+    android:background="#000000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@color/GrisClaro"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tituloRolUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/BlancoGrisaceo"
+            android:text="@string/tituloRolUsuario"/>
+
+        <RadioGroup
+            android:id="@+id/rolUsuarioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/rolCamarero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/camareroTitulo"
+                android:layout_marginEnd="10dp"
+                android:textSize="16sp"
+                android:buttonTint="@color/AzulClaro"
+                android:textColor="@color/BlancoGrisaceo" />
+
+            <RadioButton
+                android:id="@+id/rolCocinero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cocineroTitulo"
+                android:textSize="16sp"
+                android:buttonTint="@color/AzulClaro"
+                android:textColor="@color/BlancoGrisaceo" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/botonAceptarUsuarioEmpresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/botonAceptar"
+            android:backgroundTint="@color/AzulClaro"
+            android:textColor="@color/Blanco"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:cardCornerRadius="20dp"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/GrisOscuro">
+        <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="20dp"
+        android:orientation="vertical"
+        android:layout_weight="35"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/BlancoGrisaceo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:background="@color/GrisOscuro">
+            <ImageView
+                android:id="@+id/imagenNegocioList"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="5dp"/>
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/nombreNegocioList"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3.5"
+                    android:text="NOMBRE"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textColor="@color/Blanco"/>
+
+                <TextView
+                    android:id="@+id/gmailNegocioList"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:background="@color/GrisClaro"
+                    android:gravity="center"
+                    android:text="GMAIL"
+                    android:textColor="@color/Blanco"
+                    android:textSize="13sp"
+                    tools:ignore="TextSizeCheck" />
+                <View
+                    android:id="@+id/indicator"
+                    android:layout_width="0dp"
+                    android:layout_height="6dp"
+                    android:background="@color/GrisClaro"
+                    app:layout_constraintTop_toBottomOf="@id/textLayout"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:background="@color/GrisClaro"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/localidadNegocioList"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.7"
+                        android:gravity="center"
+                        android:text="CIUDAD"
+                        android:textColor="@color/Blanco"
+                        android:textSize="13sp"
+                        tools:ignore="TextSizeCheck" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/botonMasInformacionNegocio"
+                            style="@style/Widget.Material3.Button.IconButton.Filled"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginHorizontal="16dp"
+                            android:backgroundTint="@color/AzulClaro"
+                            app:icon="@android:drawable/ic_menu_view"
+                            app:iconSize="18dp"
+                            app:iconTint="@color/Blanco"
+                            tools:ignore="RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
