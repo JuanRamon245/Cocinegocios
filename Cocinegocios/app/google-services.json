@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "972870411612",
+    "firebase_url": "https://negocios-de-cocinas-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "negocios-de-cocinas",
+    "storage_bucket": "negocios-de-cocinas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972870411612:android:a95b93d09dfbc896650d99",
+        "android_client_info": {
+          "package_name": "com.example.cocinegocios"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeFHt7d-WcH9gxbEn6O1BbS6gr5Md4Lug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972870411612:android:fedd0d18a8f3729a650d99",
+        "android_client_info": {
+          "package_name": "com.example.negociosdecocinas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeFHt7d-WcH9gxbEn6O1BbS6gr5Md4Lug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
