@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="5dp"
+    android:layout_gravity="center"
+    android:background="#000000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/GrisOscuro"
+        android:padding="16dp">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imagenLocalRegistro"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@color/GrisClaro"
+            app:strokeWidth="10dp"
+            app:contentPadding="10dp"
+            app:shapeAppearanceOverlay="@style/RoundedCornersImageRestoImagenes"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:background="@drawable/borde_textview">
+
+            <TextView
+                android:id="@+id/nombreUsuario"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:text="Nombre de usuario"
+                android:textColor="@color/BlancoGrisaceo"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/apellidosUsuario"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="Apellidos de usuario"
+                android:textColor="@color/BlancoGrisaceo"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,TextSizeCheck" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:id="@+id/correoUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde_textview"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Correo de usuario"
+            android:textColor="@color/BlancoGrisaceo"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:id="@+id/DNIUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde_textview"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="DNI de usuario"
+            android:textColor="@color/BlancoGrisaceo"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:id="@+id/fechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde_textview"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Fecha de nacimiento de usuario"
+            android:textColor="@color/BlancoGrisaceo"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:id="@+id/telefonoUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde_textview"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Telefono de usuario"
+            android:textColor="@color/BlancoGrisaceo"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:id="@+id/oficioUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde_textview"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Oficio de usuario"
+            android:textColor="@color/BlancoGrisaceo"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/botonEliminarTrabajador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/botonEliminar"
+                android:backgroundTint="@color/AzulClaro"
+                android:textColor="@color/Blanco"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/botonCambiarOficioTrabajador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/botonCambiarOficioTrabajador"
+                android:backgroundTint="@color/AzulClaro"
+                android:textColor="@color/Blanco"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

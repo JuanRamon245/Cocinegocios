@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RoundedCornersImageInicioSesion" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">100dp</item>
+    </style>
+
+    <style name="RoundedCornersImageRestoImagenes" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15dp</item>
+    </style>
+
+    <style name="TextInputLayoutCustomStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/AzulClaro</item>
+        <item name="hintTextColor">@color/RojoOscuro</item>
+        <item name="android:textColorHint">@color/AzulClaro</item>
+    </style>
+
+</resources>

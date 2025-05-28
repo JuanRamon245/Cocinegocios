@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GrisOscuro"
+    tools:context=".SeleccionDeNegocios">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/BotonLogOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:backgroundTint="@color/AzulClaro"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:text="@string/botonDesloguearse"
+            android:textColor="@color/BlancoGrisaceo"
+            android:textSize="12sp"
+            tools:ignore="TouchTargetSizeCheck"></Button>
+
+        <TextView
+            android:id="@+id/negociosTitulo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:textSize="30sp"
+            android:text="@string/negociosTitulo"
+            android:textColor="@color/BlancoGrisaceo"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardElevation="5dp"
+        android:layout_weight="30">
+        <ListView
+            android:id="@+id/listaNegocios"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/BlancoGrisaceo">
+        </ListView>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="3">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="3">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/BotonParaAñadirNegocios"
+                style="@style/Widget.Material3.Button.IconButton.Filled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_marginHorizontal="16dp"
+                android:backgroundTint="@color/AzulClaro"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconSize="30dp"
+                app:iconTint="@color/BlancoGrisaceo"
+                tools:ignore="RtlHardcoded,SpeakableTextPresentCheck" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

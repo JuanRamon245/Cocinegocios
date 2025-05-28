@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/iconoapp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/iconoapp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cocinegocios"
+        tools:targetApi="31">
+        <activity
+            android:name=".GestionarNegocioUsuario"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".PerfilUsuarioActual"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".CrearComandas"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".GestionarComandas"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".Fragmentos.SolicitudesDelNegocio"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".Fragmentos.TrabajadoresDelNegocio"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".GestionarTrabajadores"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".GestionarEspacios"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".EditarProductos"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".CrearProductos"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".MenuAdministrador"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".RegistroDeNegocios"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".SeleccionDeNegocios"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".Fragmentos.Registrarse"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".Fragmentos.IniciarSesion"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="DiscouragedApi" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

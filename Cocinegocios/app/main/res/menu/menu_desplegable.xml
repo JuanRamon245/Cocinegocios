@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/Menu"
+            android:icon="@drawable/boton_menu"
+            android:title="@string/menuTitulo"/>
+        <item
+            android:id="@+id/CrearEspacios"
+            android:icon="@drawable/boton_espacios"
+            android:title="@string/CrearEspacios"/>
+        <item
+            android:id="@+id/GestionarTrabajadores"
+            android:icon="@drawable/boton_trabajadores"
+            android:title="@string/GestionarTrabajadores"/>
+        <item
+            android:id="@+id/GestionarComandas"
+            android:icon="@drawable/boton_comanda"
+            android:title="@string/GestionarComandas"/>
+        <item
+            android:id="@+id/GestionarNegocio"
+            android:icon="@drawable/boton_negocio"
+            android:title="@string/GestionarNegocio"/>
+        <item
+            android:id="@+id/CerrarSesion"
+            android:icon="@drawable/boton_salirse"
+            android:title="@string/CerrarSesion"/>
+    </group>
+</menu>
